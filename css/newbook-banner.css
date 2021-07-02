@@ -1,0 +1,43 @@
+:root{
+    --banner-colour: #453a0e;
+    --text-colour : #ffffff;
+    --button-colour: #9f7e34;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.banner-container{
+    padding: 0.5rem;
+    height:80px;
+    background-color: var(--banner-colour);
+    display: flex;
+    align-items: center;
+}
+
+.banner-container__logo > img {
+    max-width: 250px;
+    height:auto;
+}
+
+.banner-container__text{
+    color : var(--text-colour);
+}
+
+.banner-container__button > a {
+    padding: 10px 16px;
+    background-color: var(--button-colour);
+    border: 1px solid var(--button-colour);
+    color: var(--text-colour);
+    border-radius: 3px;
+}
