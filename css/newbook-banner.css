@@ -19,7 +19,6 @@ h1{
 
 .banner-container{
     padding: 1rem;
-    height:80px;
     background-color: var(--banner-colour);
 }
 
@@ -31,8 +30,18 @@ h1{
     margin: 0 auto;
 }
 
+@media screen and (max-width:768px){
+    .banner-container__inner{
+        flex-direction: column;
+    }
+    .banner-container__inner > * + *{
+        margin-bottom:1.2rem;
+    }
+
+}
+
 .banner-container__logo > img {
-    max-width: 250px;
+    max-width: 300px;
     height:auto;
 }
 
